@@ -32,7 +32,24 @@
     // }
   });
 
- 
+ function AutoPlaySlider() {
+  const topBlk = document.querySelector('.getstarted-wrap')
+  setInterval(() => {
+    if (topBlk.classList.contains('first_step')) {
+      topBlk.classList.remove('first_step')
+      topBlk.classList.add('second_step')
+    }else if (topBlk.classList.contains('second_step')){
+      topBlk.classList.remove('second_step')
+      topBlk.classList.add('third_step')
+    }else if (topBlk.classList.contains('third_step')){
+      topBlk.classList.remove('third_step')
+      topBlk.classList.add('first_step')
+    }else{
+      topBlk.classList.add('first_step')
+    }
+  }, 3000);
+ }
+ AutoPlaySlider()
   
  
 })(jQuery);

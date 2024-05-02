@@ -320,7 +320,10 @@
         border-top: 1px solid #fff;
         border-bottom: 1px solid #fff;
     }
-
+    .get_singleItem h4 { 
+        font-size: 22px; 
+        gap: 15px;
+    }
 
 
 
