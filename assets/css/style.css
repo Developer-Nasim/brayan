@@ -150,16 +150,21 @@ a.logo-area {
   gap: 20px;
 }
 
-.menu-area nav > a {
+.menu-area nav > a,
+.mobile-menu nav > a{
   padding: 10px 25px;
   display: block;
   border-radius: 50px;
   font-weight: 600;
   border: 1px solid #000;
+  text-align: center;
   transition: .3s;
 }
-
-.menu-area nav > a:hover {
+.mobile-menu nav > a{
+  margin-top: 30px;
+}
+.menu-area nav > a:hover,
+.mobile-menu nav > a:hover {
   background: #000;
   color: #fff;
 }
@@ -232,7 +237,7 @@ a.logo-area {
 }
 .mobile-menu a.logo {
   display: block;
-  max-width: 120px;
+  max-width: 150px;
   margin-bottom: 50px;
 }
 .mobile-menu ul li a {
@@ -242,18 +247,22 @@ a.logo-area {
   transition: .3s;
 }
 
-.mobile-menu ul li a:hover { 
-  color: var(--themeColor);
+.mobile-menu ul li a.active { 
+  font-weight: 700;
 } 
+ 
+
+
+
 .mobile-menu a.bars {
   position: absolute;
   right: 20px;
-  top: 15px;
+  top: 20px;
   width: 40px;
   height: 40px;
-  background: red;
+  background: #ff2424;
   text-align: center;
-  line-height: 40px;
+  line-height: 36px;
   border-radius: 50%;
   font-size: 22px;
   color: var(--white);
