@@ -2,7 +2,8 @@
   "use strict";
   
  // menu 
-  $('.siteBar-btn').click( function (){ 
+  $('.siteBar-btn').click( function (e){ 
+    e.preventDefault()
     $('.mobile-menu').toggleClass('siteBar');
     $('.menuShadow').toggleClass('show');
   }); 
