@@ -346,8 +346,12 @@
         max-height: 18px; 
         margin-right: 7px; 
     }
+    .single_form_step h4 {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
     .single_form_step label {
-        margin-bottom: 25px;
+        margin-bottom: 10px;
         font-size: 14px;
     }
     .radioBoxItem span { 
@@ -356,7 +360,9 @@
     input { 
         height: 40px; 
     }
-
+    .single_form_step label .radioBoxItem, .single_form_step label .with_scale, .single_form_step label > .row > div > input, .single_form_step label > input {
+        margin-top: 3px;
+    }
     .with_legend { 
         padding: 25px 23px;   
         padding-bottom: 0;
@@ -367,9 +373,18 @@
     .with_ckb p span {
         font-size: 9px;
     }
+    form.multistep { 
+        padding: 15px; 
+    }
+    .step_fixed_top img {
+        max-width: 50px;  
+    }
+    .all_form_step {
+        margin: 20px 0;
+    }
+
 
     
- 
 }
  
 /* Large Mobile screen :480px. */
