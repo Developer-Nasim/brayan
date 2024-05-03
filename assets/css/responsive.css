@@ -333,16 +333,40 @@
 
 
 
+    .single_form_step ul { 
+        gap: 15px; 
+    } 
+    .single_form_step ul li { 
+        font-size: 14px;
+    }
+    .with_ckb > span { 
+        min-width: 18px;
+        max-width: 18px;
+        min-height: 18px;
+        max-height: 18px; 
+        margin-right: 7px; 
+    }
+    .single_form_step label {
+        margin-bottom: 25px;
+        font-size: 14px;
+    }
+    .radioBoxItem span { 
+        padding: 7px; 
+    }
+    input { 
+        height: 40px; 
+    }
 
-
-
-
-
-
-
-
-
-
+    .with_legend { 
+        padding: 25px 23px;   
+        padding-bottom: 0;
+    }
+    .step_fixed_bottom p { 
+        font-size: 12px; 
+    }
+    .with_ckb p span {
+        font-size: 9px;
+    }
 
     
  
