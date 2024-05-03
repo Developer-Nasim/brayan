@@ -114,7 +114,17 @@ li {
 .blueBg{
   background-color: #263A80;
 }
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
 
 
 
@@ -1221,9 +1231,22 @@ input {
 .declined_coverage{
   display: none;
 }
+.textBox {
+  max-width: 200px;
+  text-align: left;
+  margin: auto;
+}
 
+.textBox h4 {
+  text-align: left;
+}
 
-
+.textBox p {
+  margin-bottom: 5px;
+} 
+form.multistep.last_one.last_thank_you button.theme-btn {
+  display: none;
+}
 
 
 

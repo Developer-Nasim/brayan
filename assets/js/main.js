@@ -61,19 +61,31 @@ function MultistepForm() {
   if (document.querySelectorAll(".all_form_step").length > 0) {
     const form = document.querySelector('form.multistep')
     let activeItem = form.querySelector('.all_form_step > .active')
-    const nextBtn = form.querySelector('.step_fixed_bottom button')
-  
-    nextBtn.addEventListener('click', () => {
-      if (activeItem.nextElementSibling) {
-        activeItem.classList.remove('active')
-        activeItem.nextElementSibling.classList.add('active')
+    const nextBtns = form.querySelectorAll('.step_fixed_bottom button')
+    
+    nextBtns.forEach(nextBtn => { 
+      nextBtn.addEventListener('click', (e) => { 
+        if (activeItem.nextElementSibling.classList.contains('single_form_step') && !activeItem.nextElementSibling.classList.contains('thankyouscreen')) {
+          activeItem.classList.remove('active')
+          activeItem.nextElementSibling.classList.add('active')
 
-        if (!activeItem.nextElementSibling.nextElementSibling) {
-          form.classList.add('last_one')
+          if (activeItem.nextElementSibling.nextElementSibling.classList.contains('thankyouscreen')) {
+            form.classList.add('last_one')
+          }
         }
-      }
-      activeItem = document.querySelector('.all_form_step > .active')
-    })
+        
+
+        if (activeItem.nextElementSibling.classList.contains('thankyouscreen')) {
+          activeItem.classList.remove('active')
+          activeItem.nextElementSibling.classList.add('active') 
+          activeItem.parentElement.parentElement.classList.add('last_thank_you') 
+        } 
+        // scroll to top
+        window.scrollTo(0,0);
+        activeItem = document.querySelector('.all_form_step > .active')
+      })
+    });
+ 
     
 
 
