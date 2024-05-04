@@ -1305,7 +1305,11 @@ p.copyright a {
   display: block;
   width: max-content;
 }
-
+.another_beneficiary,
+.another_beneficiary_2{
+  width: 100%;
+  display: none;
+}
 
 
 
@@ -1725,10 +1729,18 @@ Home page & form css has end && About page has started
 /*=================Annuities area Start ===================*/
 .Annuities-area {padding: 100px 0;}
 
-.one__pageNav {border-radius: 30px;background: linear-gradient(287deg, #E5E5E5 -21.09%, #FFF 72.9%);box-shadow: 15px 12px 31.1px 0px rgba(0, 0, 0, 0.10);text-align: center;padding: 30px;margin-right: 30px;position: sticky;top: 40px;}
-
+.one__pageNav {
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 0px 20px -3px #9c9c9c59;
+  text-align: center;
+  padding: 20px;
+  margin-right: 30px;
+  position: sticky;
+  top: 40px;
+}
 .one__pageNav ul li {
-    padding: 28px 0;
+    padding: 10px 0;
     border-bottom: 1px solid #0001;
 }
 
@@ -1737,23 +1749,21 @@ Home page & form css has end && About page has started
     padding-bottom: 0;
 }
 
-.one__pageNav ul li a {
-    font-size: 16px;
+.one__pageNav ul li a { 
     font-weight: 600;
     padding: 10px 0;
     display: block;
-    border-radius: 61px;
+    border-radius: 10px;
+    text-align: left;
+    transition: .2s;
 }
 
 .one__pageNav ul li a.active {
     background: #000;
     color: #fff;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    font-size: 18px;
-    font-weight: 700;
+    padding: 10px 10px 10px 20px; 
 }
-
-.one__page__wrp {}
+ 
 
 .one__page__wrp p {
     font-weight: 500;
@@ -1793,12 +1803,16 @@ Home page & form css has end && About page has started
 .Intro-text-box {padding: 30px;}
 
 
-.BasicsAnnuity__area {/* background: #B2BBCB; */box-shadow: 5px 7px 31.1px 0px rgba(0, 0, 0, 0.10);padding: 100px 70px;/* padding-right: 24px; */}
-
-.BasicsAnnuity__area a {
-    margin-left: auto;
+.BasicsAnnuity__area {
+  box-shadow: 5px 7px 31.1px 0px rgba(0, 0, 0, 0.10);
+  padding: 80px 50px;
 }
-
+ 
+.BasicsAnnuity__area a.theme-btn {
+  display: block;
+  margin-left: auto;
+  width: max-content;
+}
 .BasicsAnnuity__area h1 {
     text-align: right;
     max-width: 440px;
@@ -1813,7 +1827,7 @@ Home page & form css has end && About page has started
 .blue-btn:hover {
     background: #000;
 }
-.Advantages__area {background: #96B3FF;padding: 100px;}
+.Advantages__area {background: #96B3FF;padding: 80px;}
 
 .Advantages__area ul {
     margin-top: 40px;
@@ -1823,8 +1837,14 @@ Home page & form css has end && About page has started
     font-weight: 500;
     text-align: justify;
 }
-.Advantages__img {display: flex;align-items: center;justify-content: center;margin-bottom: 100px;}
-
+.Advantages__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+  position: relative;
+  z-index: 2;
+}
 .Advantages__img img {
     height: 500px;
     width: 500px;
@@ -1862,14 +1882,22 @@ Home page & form css has end && About page has started
 .Ages__content {max-width: 1080px;margin: auto;margin-top: -90px;width: 90%;}
 
 .Ages__content h1 {position: absolute;top: 70px;left: 100px;font-size: 30px;}
-.Ages__textBlk {background: rgba(164, 227, 254, 0.60);box-shadow: -4px 14px 12.4px 0px rgba(0, 0, 0, 0.08);backdrop-filter: blur(5.349999904632568px);padding: 60px 40px 40px;}
+.Ages__textBlk {
+  background: rgba(164, 227, 254, 0.60);
+  box-shadow: 0px 9px 12.4px -4px #00000014;
+  backdrop-filter: blur(5.349999904632568px);
+  padding: 60px 40px 40px;
+  border-radius: 10px;
+}
 
 .Ages__textBlk p {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .Ages__textBlk a {
-    margin: auto;
+  display: block;
+  width: max-content;
+  margin: auto;
 }
 .Surrender__area {padding: 100px 0;}
 .Surrender__content {display: flex;align-items: center;gap: 50px;}
@@ -1880,45 +1908,47 @@ Home page & form css has end && About page has started
 }
 
 .Surrender__content h1 {
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 .border-blk {flex-shrink: 0;padding: 20px;padding-left: 0;border-right: 1px solid #0002;}
 .Value-Annuity__area {background: linear-gradient(287deg, #E5E5E5 -21.09%, #FFF 91.74%);/* box-shadow: 15px 30px 34.1px 0px rgba(0, 0, 0, 0.0); */}
 .FixedV__area {padding: 100px 0;}
-.Deferred__area .Deferred__content h1 {background: #67BEFF;box-shadow: 15px 12px 31.1px 0px rgba(0, 0, 0, 0.10);}
+.Deferred__area .Deferred__content h1 {background: #67BEFF;}
 .box__style {background: linear-gradient(287deg, #E5E5E5 -21.09%, #FFF 91.74%);box-shadow: 15px 12px 31.1px 0px rgba(0, 0, 0, 0.10);}
 
 
 .Deferred__content a {
     margin: auto;
+    display: block;
+    width: max-content;
 }
 
 .Deferred__content p {
-    padding: 100px 80px;
+    padding: 50px 50px;
 }
 
 .Deferred__content h1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 150px;
-    font-size: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  font-size: 28px;
 }
 .Returns__area .Deferred__content h1 {background: #D7C1A6;box-shadow: 15px 12px 31.1px 0px rgba(0, 0, 0, 0.10);}
 
 .Returns__area {
     padding-bottom: 100px;
 }
-.faq__area {background: #9DD6EE;box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.15);}
+.faq__area {background: #9DD6EE;}
 .faq__content {max-width: 90%;margin: auto;padding: 70px 0 100px;}
 
 .faq__content > p {
     font-style: italic;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .faq__content .accordion {
-    margin-top: 70px;
+    margin-top: 40px;
 }
 
 .faq__content h1 {
@@ -1926,34 +1956,49 @@ Home page & form css has end && About page has started
     margin-bottom: 60px;
 }
 
-.accordion-item {margin-bottom: 24px;}
-
-.accordion-button {background: #CEEBF7;box-shadow: 5px 10px 39.9px 0px rgba(0, 0, 0, 0.08);backdrop-filter: blur(17.450000762939453px);border: none !important;padding: 30px;font-size: 18px;font-weight: 600;border-radius: 0;}
+.accordion-item {
+  margin-bottom: 10px;
+  border-radius: 10px ! IMPORTANT;
+  overflow: hidden;
+}
+.accordion-button {
+  background: #CEEBF7; 
+  border: none !important;
+  padding: 20px; 
+  font-weight: 600;
+  border-radius: 0;
+}
 .accordion-collapse {background: #ECF7FC;box-shadow: none;}
 
-.accordion-body {padding: 40px;padding-top: 20px;}
-
+.accordion-body {
+  padding: 20px;
+  padding-top: 0;
+}
 .accordion-body p {
     font-weight: 300;
     line-height: 1.3;
 }
 
-.question__blk {padding: 30px 40px 40px;background: #CEEBF7;}
+.question__blk {
+  padding: 30px;
+  background: #CEEBF7;
+  border-radius: 10px;
+}
 
-.src__box {display: flex;align-items: center;gap: 30px;margin-top: 10px;}
+.src__box {display: flex;align-items: center;gap: 15px;margin-top: 10px;}
 
 .src__box button {
     width: 60px;
-    height: 60px;
+    height: 50px;
     background: #1025AD;
     flex-shrink: 0;
+    border-radius: 5px;
 }
-
 .src__box input {
-    border: none;
-    padding: 0 30px;
-    font-size: 14px;
-    height: 60px;
+  border: none;
+  padding: 0 15px;
+  font-size: 14px;
+  height: 50px;
 }
 /*=================Annuities area End ===================*/
 
@@ -2035,6 +2080,79 @@ Home page & form css has end && About page has started
 
 /*================= area Start ===================*/
 /*================= area End ===================*/
+
+section.hero-area.withImg.lifeinsurance-hero {
+    padding: 50px 0;
+}
+
+section.hero-area.withImg.lifeinsurance-hero .hero-wrap.content-wrap {
+    padding: 0;
+}
+
+section.hero-area.withImg.lifeinsurance-hero > div > .row {
+    align-items: center;
+}
+section.groupStates-area {
+  padding: 80px 0;
+}
+
+.group-chart {
+  background: #9cc3fb;
+  padding: 50px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.group-chart h1 {
+  font-size: 32px;
+  margin-bottom: 50px;
+}
+
+.group-chart img {
+  display: block;
+  width: 100%;
+}
+section.expedite-area {
+  padding: 80px 0;
+}
+
+.expedite_options {
+  display: block;
+  text-align: center;
+}
+
+.expedite_options img {
+  display: block;
+}
+
+section.mistakes-area {
+  background: #f6f5ff;
+  position: relative;
+  z-index: 2;
+  padding: 80px 0;
+  background-image: url(../img/punch.png);
+  background-position: top center;
+}
+
+section.mistakes-area .section-title {
+  text-align: left;
+}
+
+section.mistakes-area  a.theme-btn {
+  margin-top: 30px;
+}
+.mistakes-blk p {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+
+
+
+
+
+
+
 
 
 

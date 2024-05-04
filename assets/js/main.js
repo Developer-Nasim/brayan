@@ -118,6 +118,7 @@ function MultistepForm() {
       })
     })
 
+    // get more option rate spouse
     const rateSpouseYes = document.querySelectorAll('input[name="rate-status"]')
     const spouseInfo = document.querySelector('.spouse_info')
     rateSpouseYes.forEach(mSt => {
@@ -130,6 +131,7 @@ function MultistepForm() {
       })
     })
 
+    // get more option based on applied insurance
     const appliedForInsurance = document.querySelectorAll('input[name="applied_insurance"]')
     const declinedCoverage = document.querySelector('.declined_coverage')
     appliedForInsurance.forEach(mSt => {
@@ -143,7 +145,33 @@ function MultistepForm() {
     })
 
 
+    // add another beneficiary
+    const beneficiary = document.querySelectorAll('input[name="beneficiary"]')
+    const anotherBeneficiary = document.querySelector('.another_beneficiary')
+    beneficiary.forEach(mSt => {
+      mSt.addEventListener('change', () => {
+        if (mSt.value == "yes") {
+          anotherBeneficiary.style.display = "block"
+        }else{
+          anotherBeneficiary.style.display = "none"
+        }
+      })
+    })
 
+
+    // add another contingent beneficiary
+    const contingentVeneficiary = document.querySelectorAll('input[name="contingent_beneficiary"]')
+    const anotherBeneficiary2 = document.querySelector('.another_beneficiary_2')
+    contingentVeneficiary.forEach(mSt => {
+      mSt.addEventListener('change', () => {
+        if (mSt.value == "yes") {
+          anotherBeneficiary2.style.display = "block"
+        }else{
+          anotherBeneficiary2.style.display = "none"
+        }
+      })
+    })
+    
 
 
   }
@@ -151,6 +179,20 @@ function MultistepForm() {
 MultistepForm()
 
 
-
+// One page static nav
+function OnePageNav() {
+  let allItems = document.querySelectorAll('.one__pageNav ul li a')
+  if (allItems.length > 0) {
+    allItems.forEach(item => {
+      item.addEventListener('click', (e) => { 
+        allItems.forEach(aItm => {
+          aItm.classList.remove('active')
+        })
+        item.classList.add('active')
+      })
+    })
+  }
+}
+OnePageNav() 
  
 })(jQuery);

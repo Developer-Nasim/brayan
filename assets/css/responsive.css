@@ -43,6 +43,12 @@
     .realExample__blk p {
         max-width: 600px;
     }
+    .menu-area nav ul { 
+        gap: 10px;
+        font-size: 15px;
+    } 
+
+
 
 }
 
@@ -217,6 +223,58 @@
     .realExample__blk h4 {
         font-size: 18px;
     }
+    
+    section.hero-area .content-img.mobile-170{
+        margin-bottom: -170px !important;
+    }
+    .one__pageNav {
+        margin-right: 0 !IMPORTANT;
+        margin-bottom: 50px;
+    }
+    
+    .Intro-flex {
+        flex-wrap: wrap;
+    }
+    
+    .Intro-flex i {
+        width: 100%;
+    }
+    
+    .BasicsAnnuity__area h1 {
+        text-align: center;
+        margin-bottom: 20px;
+        margin-top: 50px;
+        max-width: 100%;
+    }
+    
+    .BasicsAnnuity__area a.theme-btn {
+        margin: auto;
+    }
+    
+    .Advantages__img {
+        margin-bottom: 50px;
+    }
+    
+    .Ages__content h1 {
+        left: 60px;
+    }
+    
+    .Surrender__content {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .Surrender__content .border-blk {
+        padding: 0;
+        border: none;
+    }
+    
+    .Intro-flex h1 {text-align: center !important;}
+
+
+
+
 }
 
  
@@ -605,6 +663,136 @@
     section.LIFE-hero .content-wrap {
         padding-bottom: 60px;
     }
+
+
+
+
+    .one__pageNav {
+        margin-right: 0 !IMPORTANT;
+        margin-bottom: 50px;
+    }
+    
+    .Intro-flex {
+        flex-wrap: wrap;
+    }
+    
+    .Intro-flex i {
+        width: 100%;
+    }
+    
+    .BasicsAnnuity__area h1 {
+        text-align: center;
+        margin-bottom: 20px;
+        margin-top: 50px;
+        max-width: 100%;
+    }
+    
+    .BasicsAnnuity__area a.theme-btn {
+        margin: auto;
+    }
+    
+    .Advantages__img {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    
+    .Ages__content h1 {
+        left: 60px;
+    }
+    
+    .Surrender__content {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .Surrender__content .border-blk {
+        padding: 0;
+        border: none;
+        width: 100%;
+    }
+    
+    .Intro-flex h1 {text-align: center !important;}
+
+    .Annuities-area{
+        padding: 50px 0;
+    }
+
+    .BasicsAnnuity__area {
+        padding: 60px 30px;
+    }
+    
+    .Advantages__area {
+        padding: 30px;
+    }
+    
+    .Advantages__img h1 {
+        width: 250px;
+        height: 250px;
+        margin-right: 0;
+        font-size: 21px;
+        position: absolute;
+        background: rgba(255, 255, 255, .2);
+        backdrop-filter: blur(2px);
+    }
+    
+    .Advantages__img img {
+        height: 200px;
+        width: 200px;
+    }
+    
+    .bg-img {
+        height: 420px;
+    }
+    
+    .Ages__textBlk {
+        padding: 25px;
+    }
+    
+    .Surrender__content h1 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    
+    .Surrender__area {
+        padding: 70px 0;
+    }
+    
+    .Deferred__area .Deferred__content h1 {
+        text-align: center;
+        padding: 10px;
+        font-size: 25px;
+    }
+    
+    .Deferred__content p {
+        padding: 30px 30px;
+    }
+    
+    .faq__content h1 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .question__blk > h4 {
+        font-size: 20px;
+        text-align: center;
+    }
+    .accordion-button { 
+        padding: 15px; 
+    } 
+    section.mistakes-area .section-title{
+        text-align: center;
+    }
+    .mistakes-blk {
+        margin-bottom: 30px;
+    }
+    
+    section.mistakes-area a.theme-btn {
+        margin: auto;
+        display: block;
+        width: max-content;
+    }
+
 }
  
 /* Large Mobile screen :480px. */
