@@ -157,7 +157,7 @@ a.logo-area {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  gap: 20px;
+  gap: 30px;
 }
 
 .menu-area nav > a,
@@ -290,7 +290,7 @@ section.withImg {
   padding-top: 50px;
   z-index: 1;
 }
-section.withImg > div > .row {align-items: end;}
+section.withImg > div > .row {align-items: end;al;:;al;:c;}
 
 section.withImg  .content-wrap {
     padding-bottom: 100px;
@@ -1266,9 +1266,258 @@ p.copyright a {
 
 
 
+/*=================Annuities area Start ===================*/
+
+/*=================Annuities area End ===================*/
 
 
 
+/*=================Annuities area Start ===================*/
+.Annuities-area {padding: 100px 0;}
+
+.one__pageNav {border-radius: 53px;background: linear-gradient(287deg, #E5E5E5 -21.09%, #FFF 72.9%);box-shadow: 15px 12px 31.1px 0px rgba(0, 0, 0, 0.10);text-align: center;padding: 40px;margin-right: 30px;position: sticky;top: 40px;}
+
+.one__pageNav ul li {
+    padding: 40px 0;
+    border-bottom: 1px solid #0001;
+}
+
+.one__pageNav ul li:last-child {
+    border: navajowhite;
+    padding-bottom: 0;
+}
+
+.one__pageNav ul li a {
+    font-size: 17px;
+    font-weight: 600;
+    padding: 10px 0;
+    display: block;
+    border-radius: 61px;
+}
+
+.one__pageNav ul li a.active {
+    background: #000;
+    color: #fff;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.one__page__wrp {}
+
+.one__page__wrp p {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: justify;
+    margin: 0;
+}
+.Introduction__area {/* background: #BAEEFF; */box-shadow: 5px 7px 31.1px 0px rgba(0, 0, 0, 0.10);}
+.Intro-flex {display: flex;align-items: center;gap: 20px;}
+
+.Intro-flex h1 {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    margin: 0;
+}
+
+.Intro-flex i {
+    font-style: normal;
+    width: 510px;
+    height: 570px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.Intro-flex i img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    pointer-events: none;
+}
+.Intro-text-box {padding: 30px;}
+
+
+.BasicsAnnuity__area {/* background: #B2BBCB; */box-shadow: 5px 7px 31.1px 0px rgba(0, 0, 0, 0.10);padding: 100px 70px;/* padding-right: 24px; */}
+
+.BasicsAnnuity__area a {
+    margin-left: auto;
+}
+
+.BasicsAnnuity__area h1 {
+    text-align: right;
+    max-width: 440px;
+    margin-left: auto;
+    margin-bottom: 50px;
+    color: #000;
+    font-size: 32px;
+}
+
+.blue-btn {border-radius: 20px;background: #00005A;color: #fff !important;text-transform: uppercase;font-size: 20px;font-weight: 700;line-height: 1.5;display: block;width: max-content;padding: 20px 50px;}
+
+.blue-btn:hover {
+    background: #000;
+}
+.Advantages__area {background: #96B3FF;padding: 100px;}
+
+.Advantages__area ul {
+    margin-top: 40px;
+}
+
+.Advantages__area ul li {
+    font-size: clamp(1.063rem, 0.431vw + 0.795rem, 1.313rem);
+    font-weight: 500;
+    text-align: justify;
+}
+.Advantages__img {display: flex;align-items: center;justify-content: center;margin-bottom: 100px;}
+
+.Advantages__img img {
+    height: clamp(21.875rem, 26.042vw + 9.375rem, 40.625rem);
+    width: clamp(21.875rem, 26.042vw + 9.375rem, 40.625rem);
+}
+
+.Advantages__img h1 {
+    border-radius: 100%;
+    background: rgba(255, 255, 255, 0.70);
+    box-shadow: 5px 8px 18.5px 0px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(6.650000095367432px);
+    width: clamp(15.625rem, 17.361vw + 7.292rem, 28.125rem);
+    height: clamp(15.625rem, 17.361vw + 7.292rem, 28.125rem);
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    margin-right: -190px;
+    font-size: clamp(1.875rem, 1.042vw + 1.375rem, 2.625rem);
+}
+.list-disk {
+}
+.Ages__area {
+    position: relative;
+}
+.bg-img {width: 100%;height: 570px;}
+
+.bg-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.Ages__content {max-width: 1080px;margin: auto;margin-top: -90px;width: 90%;}
+
+.Ages__content h1 {position: absolute;top: 70px;left: 100px;font-size: clamp(1.875rem, 1.042vw + 1.375rem, 2.625rem);}
+.Ages__textBlk {background: rgba(164, 227, 254, 0.60);box-shadow: -4px 14px 12.4px 0px rgba(0, 0, 0, 0.08);backdrop-filter: blur(5.349999904632568px);padding: 60px 40px 40px;}
+
+.Ages__textBlk p {
+    margin-bottom: 50px;
+}
+
+.Ages__textBlk a {
+    margin: auto;
+}
+.Surrender__area {padding: 100px 0;}
+.Surrender__content {display: flex;align-items: center;gap: 50px;}
+
+.Surrender__content a {
+    font-size: 17px;
+    padding: 24px 50px;
+}
+
+.Surrender__content h1 {
+    margin-bottom: 60px;
+}
+.border-blk {flex-shrink: 0;padding: 20px;padding-left: 0;border-right: 1px solid #0002;}
+.Value-Annuity__area {background: linear-gradient(287deg, #E5E5E5 -21.09%, #FFF 91.74%);/* box-shadow: 15px 30px 34.1px 0px rgba(0, 0, 0, 0.0); */}
+.FixedV__area {padding: 100px 0;}
+.Deferred__area .Deferred__content h1 {background: #67BEFF;box-shadow: 15px 12px 31.1px 0px rgba(0, 0, 0, 0.10);}
+.box__style {background: linear-gradient(287deg, #E5E5E5 -21.09%, #FFF 91.74%);box-shadow: 15px 12px 31.1px 0px rgba(0, 0, 0, 0.10);}
+
+
+.Deferred__content a {
+    margin: auto;
+}
+
+.Deferred__content p {
+    padding: 100px 80px;
+}
+
+.Deferred__content h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 220px;
+}
+.Returns__area .Deferred__content h1 {background: #D7C1A6;box-shadow: 15px 12px 31.1px 0px rgba(0, 0, 0, 0.10);}
+
+.Returns__area {
+    padding-bottom: 100px;
+}
+.faq__area {background: #9DD6EE;box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.15);}
+.faq__content {max-width: 90%;margin: auto;padding: 70px 0 100px;}
+
+.faq__content > p {
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+.faq__content .accordion {
+    margin-top: 70px;
+}
+
+.faq__content h1 {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.accordion-item {margin-bottom: 24px;}
+
+.accordion-button {background: #CEEBF7;box-shadow: 5px 10px 39.9px 0px rgba(0, 0, 0, 0.08);backdrop-filter: blur(17.450000762939453px);border: none !important;padding: 30px;font-size: 22px;font-weight: 600;padding-left: 80px;border-radius: 0;}
+.accordion-collapse {background: #ECF7FC;box-shadow: none;}
+
+.accordion-body {padding: 40px;padding-left: 140px;}
+
+.accordion-body p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.3;
+}
+
+.question__blk {padding: 30px 40px 40px;background: #CEEBF7;}
+
+.src__box {display: flex;align-items: center;gap: 30px;margin-top: 10px;}
+
+.src__box button {
+    width: 100px;
+    height: 100px;
+    background: #1025AD;
+    flex-shrink: 0;
+}
+
+.src__box input {
+    border: none;
+    padding: 0 30px;
+    font-size: 14px;
+    height: 100px;
+}
+/*=================Annuities area End ===================*/
+
+
+
+
+/*=================Annuities area Start ===================*/
+/*=================Annuities area End ===================*/
+
+
+
+/*=================Annuities area Start ===================*/
+/*=================Annuities area End ===================*/
 
 
 
