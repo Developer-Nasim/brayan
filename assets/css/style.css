@@ -1106,6 +1106,7 @@ input {
   margin: 0;
   cursor: pointer;
   opacity: 0;
+  z-index: 2;
 }
 
 .with_ckb > input:checked~span {
@@ -1247,8 +1248,14 @@ input {
 form.multistep.last_one.last_thank_you button.theme-btn {
   display: none;
 }
-
-
+p.copyright a {
+  margin: 0 10px;
+}
+.textBox a.theme-btn {
+  margin: auto;
+  display: block;
+  width: max-content;
+}
 
 
 
