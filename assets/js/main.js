@@ -17,19 +17,12 @@
       '<i class="fa fa-angle-left"></i>',
       '<i class="fa fa-angle-right"></i>'
     ],
+    autoplay: true,
+    autoplayTimeout: 4000,
+    smartSpeed: 500,
+    autoplaySpeed: 500,
     nav: false,
-    dots: true,
-    // responsive: {
-    //   0: {
-    //     items: 2
-    //   },
-    //   767: {
-    //     items: 3
-    //   },
-    //   992: {
-    //     items: 6
-    //   }
-    // }
+    dots: true, 
   });
 
 
