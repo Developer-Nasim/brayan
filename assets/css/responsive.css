@@ -1,7 +1,11 @@
 /* Big screen :1200px. */
 @media (min-width: 1200px) and (max-width: 1500px) {
-
-
+    .Rider__blk {
+        font-size: 13px;
+    }
+    .info-faq .info-blk p {
+        font-size: 15px;
+    }
 }
 
 
@@ -27,6 +31,17 @@
     .brands img {
         max-height: 60px;
         max-width: 200px;
+    }
+    .info-faq .info-blk h4 {
+        font-size: 20px;
+    }
+    
+    .info-faq .info-blk p {
+        font-size: 15px;
+    }
+    
+    .realExample__blk p {
+        max-width: 600px;
     }
 
 }
@@ -176,6 +191,32 @@
     .xmRateBlk{
         margin-bottom: 50px;
     }
+    .info-faq .info-blk h4 {
+        font-size: 20px;
+    }
+    
+    .info-faq .info-blk p {
+        font-size: 15px;
+    }
+    
+    .realExample__blk p {
+        max-width: 600px;
+    }
+    .Rider__blk {
+        margin-top: 30px;
+    }
+    
+    .realExample__blk i {
+        max-width: 220px;
+    }
+    
+    .realExample__blk.right i {
+        max-width: 360px;
+    }
+    
+    .realExample__blk h4 {
+        font-size: 18px;
+    }
 }
 
  
@@ -314,7 +355,7 @@
     }
     
     .section-title h1 {
-        font-size: 32px;
+        font-size: 30px;
     }
     
     .getstarted-img {
@@ -480,10 +521,94 @@
     .xmRateBlk{
         margin-bottom: 30px;
     }
+    .info-faq .info-blk h4 {
+        font-size: 20px;
+        padding-bottom: 15px;
+    }
+    
+    .info-faq .info-blk p {
+        font-size: 15px;
+    }
+    
+    .realExample__blk p {
+        max-width: 600px;
+    }
+
+.realExample__blk.right {
+    margin-top: 70px;
+}
+    .Rider__blk {
+        margin-top: 30px;
+        border-radius: 20px;
+        padding: 28px;
+        font-size: 14px;
+    }
+    
+    .realExample__blk i {
+        max-width: 220px;
+        position: unset;
+        display: block;
+        margin-bottom: 20px;
+        margin-inline: auto;
+    }
+    
+    .realExample__blk.right i {
+        max-width: 360px;
+        margin-inline: auto;
+    }
+    
+    .realExample__blk h4 {
+        font-size: 16px;
+        margin-inline: auto;
+        width: 100%;
+        text-align: center;
+    }
+    .ylw-box h4 {
+        font-size: 16px;
+    }
+    
+    .ylw-box h4 a {
+        display: block;
+        width: max-content;
+        margin: auto;
+    }
+    
+    .Rider__blk .flex {
+        display: block;
+    }
+    
+    .Rider__blk .flex ul.right {
+        margin-top: 20px;
+        text-align: left;
+    }
+    
+    .Rider__blk .flex ul {
+        width: 100%;
+    }
+    
+    .info-faq .info-blk {
+        padding-bottom: 15px;
+        text-align: center;
+        padding: 30px;
+    }
+    
+    .realExample-area h3 {
+        font-size: 24px;
+    }
+    
+    .realExample-area h3 br {
+        display: none;
+    }
+    .content-wrap h1 {
+        font-size: 30px;
+    }
+    section.LIFE-hero .content-wrap {
+        padding-bottom: 60px;
+    }
 }
  
 /* Large Mobile screen :480px. */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 .container {width:450px}
- 
+.ylw-box h4 a{display: inline-block;}
 }
