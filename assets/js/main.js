@@ -67,14 +67,25 @@ function MultistepForm() {
           }
         }
         
+        // check item need change bg or not
+        if (activeItem.nextElementSibling.dataset.bg) {
+          form.classList.add(activeItem.nextElementSibling.dataset.bg)
+        }else{
+          form.classList.remove(activeItem.nextElementSibling.dataset.bg)
+          form.classList.remove(activeItem.dataset.bg)
+        }
 
+        // SHow up the tahnks screen
         if (activeItem.nextElementSibling.classList.contains('thankyouscreen')) {
           activeItem.classList.remove('active')
           activeItem.nextElementSibling.classList.add('active') 
           activeItem.parentElement.parentElement.classList.add('last_thank_you') 
         } 
+
         // scroll to top
         window.scrollTo(0,0);
+
+        // pass active item into top
         activeItem = document.querySelector('.all_form_step > .active')
       })
     });
