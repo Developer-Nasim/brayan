@@ -105,13 +105,13 @@ li {
   padding: 0;
   line-height: auto;
  }
-.grayBg{
+.grayBg,form.multistep.grayBg{
   background-color: #F8F8F8;
 }
-.softblueBg{
+.softblueBg,form.multistep.softblueBg{
   background-color: #7CC8FF;
 }
-.blueBg{
+.blueBg,form.multistep.blueBg{
   background-color: #263A80;
 }
 /* Chrome, Safari, Edge, Opera */
@@ -343,18 +343,30 @@ a.theme-btn:hover,button.theme-btn:hover {
 }
 .content-img {
   display: block;
+  position: relative;
+  z-index: 2;
 }
 
 .content-img img {
   display: block;
   margin-left: auto;
 }
+.content-img.grayLeaner:after {
+  content: "";
+  position: absolute;
+  width: 10%;
+  height: 100%;
+  background: linear-gradient(-90deg, #F8F8F8, transparent);
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
 .rightMode .content-img img { 
   margin-right: auto;
   margin-left: 0;
 }
 section.hero-area .content-img img {
-  max-width: 700px;
+  /* max-width: 700px; */
 }
 
 section.withImg  .hero-wrap {
@@ -479,6 +491,10 @@ section.withImg .content-wrap a.theme-btn {
 }
 
 section.getstarted-area,
+section.about-area,
+section.mxmrates-area,
+section.about-area,
+section.offer-area,
 section.application-area {
   padding: 80px 0;
 }
@@ -603,6 +619,7 @@ section.application-area {
 section.info-area,
 section.type-area,
 section.brands-area,
+section.mission-area,
 .purchase_details-area {
   padding: 80px 0;
 }
@@ -1264,6 +1281,407 @@ p.copyright a {
 
 
 
+/* ======================== 
+Home page & form css has end && About page has started
+========================*/
+
+
+
+
+
+section.hero-area.withImg.normalHero > div > .row {
+  align-items: center;
+}
+
+section.hero-area.withImg.normalHero  .content-wrap.hero-wrap {
+  padding-bottom: 0;
+}
+ 
+.about-wrap {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.about-wrap img.about-img {
+  display: block;
+  max-width: 500px;
+}
+
+.about-content ul {
+  background: #fff;
+  padding: 30px;
+  margin-top: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px #e6e6e6;
+}
+
+.about-content ul li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.about-content ul li img {
+  max-width: 20px;
+}
+
+.about-details {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.details ul.states {margin-bottom: 20px;text-align: center;position: relative;}
+
+.details ul.states li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+
+.details ul.states li h5, .details ul.states li span {
+  width: 50%;
+}
+
+.details ul.states li h5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 0;
+}
+
+.details ul.states li h5 img {
+  margin-top: -5px;
+}
+
+.details ul.states:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1px;
+  height: 100%;
+  background: #d7d7d7;
+}
+
+.details button.theme-btn {
+  margin: auto;
+  display: block;
+  width: 100%;
+}
+
+
+/* About area end and mission area STARTED */
+
+
+.mission-title h1 {
+  margin: 0;
+  padding: 55px;
+  background: #fff;
+  border-radius: 30px 100px 30px 30px;
+  font-size: 60px;
+  max-width: 90%;
+}
+
+.mission-wrap p {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+
+/* Mission-area END and Offer-area STARTED */
+
+
+
+
+.offer-blk {
+  background: #fff;
+  box-shadow: 0px 0px 10px 0px #e6e6e6;
+  border-radius: 10px;
+  padding: 35px;
+  height: 100%;
+}
+
+.offer-blk > img {
+  display: block;
+  margin: auto;
+  height: 100px;
+}
+
+.offer-blk h4 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.offer-blk p {
+  margin: 0;
+  font-size: 15px;
+}
+
+.offer-blk ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.offer-blk ul li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+}
+
+.offer-blk ul li img {
+  width: 15px;
+}
+
+.ctabox {
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 0px 10px 0px #e6e6e6;
+  padding: 50px;
+  margin-top: 70px;
+  border-radius: 20px;
+}
+
+.ctabox-left {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  border-right: 1px solid #a3a3a3;
+  margin-right: 50px;
+  padding-right: 50px;
+  width: 50%;
+}
+
+.ctabox-left img {
+  max-width: 130px;
+}
+
+.ctabox-left h4 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.ctabox-right {
+  width: 50%;
+}
+
+.ctabox-right a.theme-btn {
+  border-radius: 100px;
+  margin: auto;
+  display: block;
+}
+section.hero-area.withImg.normalHero a.theme-btn {
+  width: max-content;
+  margin-top: 10px;
+}
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+/* ======================== 
+About page & form css has end && NoMed page has started
+========================*/
+
+
+
+
+
+
+
+
+section.wlife-area.withImg, 
+section.ulife-area.withImg, 
+section.linsurance-area.withImg {
+  padding-top: 80px;
+}
+
+ul.boldLists li {
+  list-style: disc;
+  margin-left: 40px;
+}
+
+ul.boldLists {
+  margin-bottom: 29px;
+}
+section.iulcash-area.withImg {
+  padding: 100px 0;
+}
+
+section.iulcash-area.withImg .content-wrap {
+  padding: 0;
+}
+
+section.iulcash-area.withImg > div > .row {
+  align-items: center;
+}
+
+section.iulcash-area.withImg .content-wrap a.theme-btn {
+  width: max-content;
+  margin-top: 10px;
+}
+
+.mprem {
+  margin-top: 50px;
+}
+
+.mprem img {
+  display: block;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.mprem ul li {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.mprem ul li span {
+  min-width: 30px;
+  width: 30px;
+  height: 30px;
+  background: #fff;
+}
+.mprem ul li:first-child span{
+  background: #08A5CB;
+}
+.mprem ul li {
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+.deathBenefit {
+  padding-top: 100px;
+  max-width: 90%;
+}
+
+p.italicTxt {
+  margin: 0;
+  text-align: center;
+  margin-top: 50px;
+}
+.xmRateBlk {
+  position: relative;
+  text-align: center;
+}
+
+.xmRateBlk img {
+  display: block;
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+  object-position: top;
+  margin: auto;
+}
+
+.xmRateBlk div {
+  background: #fff;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.xmRateBlk div p {
+  margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ======================== 
+Home page & form css has end && About page has started
+========================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ======================== 
+Home page & form css has end && About page has started
+========================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ======================== 
+Home page & form css has end && About page has started
+========================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ======================== 
+Home page & form css has end && About page has started
+========================*/
 
 
 
@@ -1284,3 +1702,8 @@ p.copyright a {
 
 
 
+
+
+
+
+ 
