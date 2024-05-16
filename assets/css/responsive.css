@@ -227,6 +227,10 @@
     section.hero-area .content-img.mobile-170{
         margin-bottom: -170px !important;
     }
+    
+    section.hero-area .content-img.mobile-100{
+        margin-bottom: -100px !important;
+    }
     .one__pageNav {
         margin-right: 0 !IMPORTANT;
         margin-bottom: 50px;
@@ -295,6 +299,9 @@
     
     section.hero-area .content-img.mobile-170{
         margin-bottom: -170px !important;
+    }
+    section.hero-area .content-img.mobile-100{
+        margin-bottom: -100px !important;
     }
     .hero-wrap {
         background: linear-gradient(0, #fff, #fff, #fff, transparent);
